@@ -1,0 +1,527 @@
+/* CAPC capcvet.org color scheme and structure - matched from site CSS */
+:root {
+  --capc-white: #fff;
+  --capc-teal: #3f7566;
+  --capc-teal-dark: #2d5449;
+  --capc-orange: #f27935;
+  --capc-orange-alt: #f6884a;
+  --capc-blue-gray: #5f7d92;
+  --capc-dark-blue: #2e495b;
+  --capc-gray-border: #e9ebe2;
+  --capc-gray-mid: #cec8c8;
+  --capc-gray-text: #9b9b9b;
+  --capc-gray-placeholder: #7b7b7b;
+  --capc-gray-input-border: #979797;
+  --capc-bg-light: #f4f5ef;
+  --capc-nav-hover: #a2df76;
+  --capc-search-btn: #748896;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 15.5px;
+  background: #f4f5ef;
+  color: var(--capc-dark-blue);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+  cursor: default;
+}
+
+/* Header - same as capcvet.org #header */
+#header {
+  background: var(--capc-white);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+#header header .row-1 {
+  max-width: 1010px;
+  max-width: 63.125rem;
+  margin: 0 auto;
+  padding: 7px 20px;
+}
+
+.first-row-header-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.brand-wrap {
+  flex-shrink: 0;
+}
+
+.brand {
+  display: block;
+  width: 148px;
+  height: 83px;
+  line-height: 0;
+}
+
+.brand img {
+  max-width: 148px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.top-nav {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+}
+
+.top-nav li a {
+  font-size: 14.4px;
+  font-size: 0.9rem;
+  font-family: 'Bebas Neue', Helvetica, Arial, sans-serif;
+  color: var(--capc-dark-blue);
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  transition: color 0.25s ease;
+}
+
+.top-nav li a:hover {
+  color: var(--capc-orange);
+}
+
+/* Header right: top nav + Join / Sign In - match capcvet.org */
+.header-right {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 0;
+  margin-left: auto;
+}
+
+.header-right .top-nav {
+  margin: 28px 30px 28px 0;
+}
+
+/* capcvet.org .account-buttons-large: orange, Bebas Neue, 100x44 */
+.btn-header {
+  font-family: 'Bebas Neue', Helvetica, Arial, sans-serif;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  line-height: 0.8;
+  padding: 14px;
+  margin: 18px 2px 20px;
+  width: 100px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f27935;
+  border: none;
+  outline: 0;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.25s ease;
+}
+
+.btn-header:hover {
+  background: #e06b2a;
+  color: #fff;
+}
+
+.btn-header .btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 6px;
+  flex-shrink: 0;
+}
+
+.btn-header .btn-icon svg {
+  display: block;
+}
+
+.btn-signin {
+  margin-left: 0;
+}
+
+/* Main nav bar - teal strip same as capcvet.org .main-nav-container */
+.main-nav-container {
+  background: #3f7566;
+  border-top: 1px solid #fff;
+}
+
+.main-nav-row {
+  max-width: 1010px;
+  max-width: 63.125rem;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 28px 0;
+  gap: 10px;
+}
+
+.main-nav li {
+  flex: 1;
+  text-align: left;
+}
+
+.main-nav li a {
+  color: #fff;
+  font-size: 18.9px;
+  font-size: 1.18125rem;
+  font-family: 'Bebas Neue', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.04em;
+  transition: color 0.25s ease;
+  display: block;
+  line-height: 1.25;
+}
+
+.main-nav li a:hover {
+  color: #a2df76;
+}
+
+/* Main content - same structure as capcvet.org */
+#main-content {
+  min-height: 500px;
+  flex: 1;
+  background: #f4f5ef;
+}
+
+.default-content-container {
+  max-width: 1010px;
+  max-width: 63.125rem;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Page heading - .page-heading-blue from capcvet.org */
+.page-heading-blue {
+  display: block;
+  margin: 0 0 20px;
+}
+
+.page-heading-blue h1 {
+  font-size: 25px;
+  font-size: 1.5625rem;
+  color: var(--capc-blue-gray);
+  margin-bottom: 8px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-family: 'Bebas Neue', Helvetica, Arial, sans-serif;
+}
+
+.page-heading-blue p {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  color: var(--capc-gray-text);
+  font-size: 12.6px;
+  font-size: 0.7875rem;
+}
+
+.line-solid-gray {
+  width: 100%;
+  height: 1px;
+  margin: 20px 0;
+  border-top: 1px solid var(--capc-gray-border);
+}
+
+/* Chat container */
+.chat-container {
+  background: var(--capc-white);
+  border: 1px solid var(--capc-gray-border);
+  display: flex;
+  flex-direction: column;
+  min-height: 420px;
+  max-height: 65vh;
+}
+
+.messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px 29px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.message {
+  max-width: 85%;
+  padding: 12px 16px;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  animation: fadeIn 0.25s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.message.user {
+  align-self: flex-end;
+  background: var(--capc-orange);
+  color: var(--capc-white);
+}
+
+.message.assistant {
+  align-self: flex-start;
+  background: var(--capc-bg-light);
+  color: var(--capc-dark-blue);
+  border: 1px solid var(--capc-gray-border);
+}
+
+.message .label {
+  font-size: 10.8px;
+  font-size: 0.675rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.35rem;
+  color: var(--capc-teal);
+}
+
+.message.user .label {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.message .text {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.messages-placeholder {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--capc-gray-text);
+  font-size: 13px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.input-area {
+  padding: 16px 29px 20px;
+  border-top: 1px solid var(--capc-gray-border);
+  background: var(--capc-white);
+}
+
+.input-row {
+  display: flex;
+  gap: 12px;
+  align-items: flex-end;
+}
+
+.input-wrap {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Input - matches .input-field-def1 from capcvet.org */
+#userInput {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid var(--capc-gray-input-border);
+  font-size: 13px;
+  font-size: 0.8125rem;
+  font-family: inherit;
+  color: var(--capc-dark-blue);
+  resize: none;
+  min-height: 36px;
+  max-height: 120px;
+  background: var(--capc-white);
+  box-shadow: none;
+}
+
+#userInput::placeholder {
+  color: var(--capc-gray-placeholder);
+}
+
+#userInput:focus {
+  outline: 0;
+  border-color: var(--capc-teal);
+}
+
+/* Button - matches .button from capcvet.org (orange CTA) */
+.button {
+  font-family: 'Bebas Neue', Helvetica, Arial, sans-serif;
+  transition: all 0.25s ease;
+}
+
+.btn-send {
+  padding: 14px 24px;
+  background: var(--capc-orange);
+  color: var(--capc-white);
+  border: none;
+  font-family: 'Bebas Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  cursor: pointer;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.btn-send:hover {
+  background: var(--capc-orange-alt);
+}
+
+.btn-send:disabled {
+  background: var(--capc-gray-text);
+  cursor: not-allowed;
+}
+
+.error-msg {
+  background: #fef2f2;
+  color: #b91c1c;
+  padding: 0.75rem 1rem;
+  font-size: 12px;
+  margin-top: 8px;
+  border: 1px solid #fecaca;
+}
+
+.typing {
+  display: flex;
+  gap: 4px;
+  padding: 0.5rem 0;
+}
+
+.typing span {
+  width: 6px;
+  height: 6px;
+  background: var(--capc-gray-text);
+  border-radius: 50%;
+  animation: bounce 1.2s ease-in-out infinite;
+}
+
+.typing span:nth-child(2) {
+  animation-delay: 0.15s;
+}
+
+.typing span:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+@keyframes bounce {
+
+  0%,
+  60%,
+  100% {
+    transform: translateY(0);
+  }
+
+  30% {
+    transform: translateY(-6px);
+  }
+}
+
+/* Selection - capcvet.org uses orange */
+::selection {
+  color: var(--capc-white);
+  background: var(--capc-orange);
+}
+
+/* Responsive - match capcvet.org breakpoints */
+@media screen and (max-width: 1023px) {
+  .main-nav li a {
+    font-size: 16px;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #header header .row-1 {
+    padding: 0 15px;
+  }
+
+  .first-row-header-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-right {
+    margin-left: 0;
+  }
+
+  .header-right .top-nav {
+    margin: 10px 0 12px;
+  }
+
+  .btn-header {
+    width: 80px;
+    padding: 10px 8px;
+    margin: 10px 0 12px 2px;
+    font-size: 16px;
+  }
+
+  .main-nav-container {
+    padding: 0 15px;
+  }
+
+  .main-nav {
+    flex-direction: column;
+    margin: 0;
+    gap: 0;
+  }
+
+  .main-nav li {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .main-nav li a {
+    display: block;
+    padding: 12px 0;
+    line-height: 1.5;
+  }
+
+  .default-content-container {
+    padding: 15px;
+  }
+
+  .message {
+    max-width: 95%;
+  }
+
+  .chat-container {
+    max-height: 55vh;
+  }
+
+  .messages {
+    padding: 15px 20px;
+  }
+
+  .input-area {
+    padding: 12px 20px 16px;
+  }
+}

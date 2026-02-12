@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAPC Chatbot | Companion Animal Parasite Council</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="header">
+    <header>
+      <div class="row-1 first-row-header-bar">
+        <div class="brand-wrap">
+          <a href="https://capcvet.org/" class="brand" target="_blank" rel="noopener">
+            <img src="https://capcvet.org/assets/img/logo-main@2x.png" alt="CAPC - Companion Animal Parasite Council"
+              width="148" height="83">
+          </a>
+        </div>
+        <div class="header-right">
+          <ul class="top-nav">
+            <li><a href="https://capcvet.org/about-capc/">About CAPC</a></li>
+            <li><a href="https://capcvet.org/guidelines/">Guidelines</a></li>
+            <li><a href="https://capcvet.org/contact/">Contact</a></li>
+          </ul>
+          <a href="https://capcvet.org/subscriptions#/register" class="btn-header btn-join" target="_blank"
+            rel="noopener"><span class="btn-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24"
+                fill="currentColor" aria-hidden="true">
+                <path
+                  d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+              </svg></span>Join</a>
+          <a href="https://capcvet.org/subscriptions#/login" class="btn-header btn-signin" target="_blank"
+            rel="noopener">Sign In</a>
+        </div>
+      </div>
+      <div class="main-nav-container">
+        <div class="row main-nav-row">
+          <ul class="main-nav">
+            <li><a href="https://capcvet.org/maps/">Parasite Prevalence<br>Maps</a></li>
+            <li><a href="https://capcvet.org/guidelines/">View CAPC Parasite<br>Guidelines</a></li>
+            <li><a href="https://capcvet.org/articles/">Expert<br>Articles</a></li>
+            <li><a href="https://capcvet.org/videos/">Video<br>Archives</a></li>
+            <li><a href="https://capcvet.org/resources/">Resource<br>Library</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <div id="main-content">
+    <div class="default-content-container">
+      <div class="page-heading-blue">
+        <h1>Chat with CAPC AI Assistant!</h1>
+        <p>Ask questions about parasite guidelines, prevention, and pet health. Responses are powered by AI for general
+          guidance.</p>
+      </div>
+
+      <div class="chat-container">
+        <div class="messages" id="messages">
+          <div class="messages-placeholder" id="placeholder">
+            Type a message below to get started. Try asking about heartworm prevention, tick-borne diseases, or parasite
+            guidelines.
+          </div>
+        </div>
+        <div class="input-area">
+          <div class="input-row">
+            <div class="input-wrap">
+              <textarea id="userInput" rows="1" placeholder="Ask a question..." autofocus></textarea>
+              <div class="error-msg" id="errorMsg" style="display: none;"></div>
+            </div>
+            <button type="button" class="button btn-send" id="sendBtn" aria-label="Send message">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
