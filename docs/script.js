@@ -1,5 +1,5 @@
 (function () {
-  const GEMINI_API_KEY = 'AIzaSyCmlGYGR-4fZw7wiNB4EBEXwfnXJXhWIW4';
+  const GEMINI_API_KEY = 'AIzaSyBfhwQfVt-1EOyST36YCTBKdn0V3ORh_Tc';
   const GEMINI_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent';
 
   const messagesEl = document.getElementById('messages');
